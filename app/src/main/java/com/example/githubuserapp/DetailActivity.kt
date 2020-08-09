@@ -21,7 +21,7 @@ class DetailActivity : AppCompatActivity() {
 
 
         val intent = intent
-        val avatar = intent.getIntExtra("avatar",0)
+        val avatars = intent.getIntExtra("avatar",0)
         val username = intent.getStringExtra("username")
         val name = intent.getStringExtra("name")
         val company = intent.getStringExtra("company")
@@ -29,7 +29,7 @@ class DetailActivity : AppCompatActivity() {
         val repository = intent.getStringExtra("repository")
         val followers = intent.getStringExtra("followers")
         val following = intent.getStringExtra("following")
-        setData(avatar, username, name, company, lokasi, repository, followers, following)
+        setData(avatars, username, name, company, lokasi, repository, followers, following)
 
     }
 
