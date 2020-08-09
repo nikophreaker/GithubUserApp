@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    app:civ_border_width="4dp"
+    android:id="@+id/avatar" />
+
+    <TextView
+    android:id="@+id/username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginStart="20dp"
+    android:layout_toEndOf="@id/avatar"
+    android:text="@string/username"
+    android:textSize="20sp"
+    android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_below="@id/username"
+        android:text="@string/name"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_below="@id/name"
+        android:text="@string/lokasi"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>
