@@ -19,16 +19,15 @@ class DetailActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-
-        val intent = intent
-        val avatar = intent.getIntExtra("avatar",0)
-        val username = intent.getStringExtra("username")
-        val name = intent.getStringExtra("name")
-        val company = intent.getStringExtra("company")
-        val lokasi = intent.getStringExtra("lokasi")
-        val repository = intent.getStringExtra("repository")
-        val followers = intent.getStringExtra("followers")
-        val following = intent.getStringExtra("following")
+        val user = intent.getParcelableExtra<User>("user")
+        val avatar = user.avatar
+        val username = user.username
+        val name = user.name
+        val company = user.company
+        val lokasi = user.lokasi
+        val repository = user.repository
+        val followers = user.follower
+        val following = user.following
         setData(avatar, username, name, company, lokasi, repository, followers, following)
 
     }

@@ -9,6 +9,7 @@
     <string name="following">Following</string>
     <string name="followers">Followers</string>
     <string name="repository">Repository</string>
+    <string name="search">Search</string>
 
     <!--data github user-->
     <string-array name="username">
