@@ -1,5 +1,5 @@
 # GithubUserApp
-my training lol
--SearchView
--RecyclerView with adapter (Filterable)
--Explicit Intent data Parcelable
+Just my study
+- SearchView
+- RecyclerView with adapter (Filterable)
+- Explicit Intent data Parcelable
